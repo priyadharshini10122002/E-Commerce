@@ -1,0 +1,102 @@
+/* Product Info Section */
+.product-info {
+  background-color: #333; /* Dark background for product details */
+  padding: 20px;
+  margin: 20px auto; /* Center the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limit the width of the container */
+  width: 100%; /* Make it responsive */
+  text-align: left; /* Align all text to the left */
+}
+
+/* Universal font styling for h1 */
+.product-info h1 {
+  font-family: Arial, sans-serif; /* Uniform font for all headings */
+  font-size: 1.2em; /* Set consistent font size */
+  margin: 10px 0;
+  color: #fff; /* White color for all text */
+}
+
+/* Flex grid for proper label-content alignment */
+.product-info .info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.product-info .info-row span {
+  font-weight: bold; /* Make the labels (name, price, etc.) bold */
+  margin-right: 10px; /* Space between label and content */
+  width: 140px; /* Ensure labels have a fixed width */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.product-info .info-row div {
+  flex-grow: 1; /* Allow content to take remaining space */
+}
+
+/* Button Container Styling */
+.product-info .buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Add space between the buttons */
+  margin-top: 20px;
+}
+
+/* Button and Link Styling */
+.product-info .buttons a,
+.product-info .buttons button {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Make the link behave like a button */
+  text-align: center;
+}
+
+.product-info .buttons a:hover,
+.product-info .buttons button:hover {
+  background-color: #000;
+  color: #ffcc00;
+}
+
+/* Back to Products Link Hover */
+.product-info .buttons a:hover {
+  color: #ffcc00;
+}
+
+/* Styling for the Back to Products Link */
+.navlink {
+  text-decoration: none;
+  color: #fff; /* White links */
+  display: inline-flex;
+  align-items: center; /* Align icon and text horizontally */
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navlink i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.navlink:hover {
+  background-color: #f5a623;
+  color: #fff;
+}
+
+.navlink:active {
+  background-color: #e59400;
+  color: #fff;
+  transform: scale(0.98);
+}

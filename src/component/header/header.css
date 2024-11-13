@@ -1,0 +1,15 @@
+.heading {
+  padding: 20px;
+}
+
+.heading h1 {
+  font-size: 2.5em;
+  color: #ffcc00; /* Gold color for title */
+  margin: 0;
+}
+
+.heading h2 {
+  font-size: 1.5em;
+  color: #ddd; /* Lighter gray for subtitle */
+  margin: 0;
+}

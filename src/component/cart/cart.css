@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Container for the entire app */
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure the body takes the full height */
+  padding: 20px;
+}
+/* General Product Info */
+.Product-info {
+  background-color: #333; /* Dark background for products */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Increased max-width for larger container */
+  width: 100%; /* Ensures it takes up full width up to the max-width */
+  margin: 20px auto; /* Center the product card */
+}
+
+.Product-info h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ffcc00; /* Gold text for product names */
+  margin-bottom: 15px; /* Add space below the heading */
+}
+
+.Product-info .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Product-info .buttons a,
+.Product-info .buttons button {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Product-info .buttons a:hover,
+.Product-info .buttons button:hover {
+  background-color: #000;
+  color: #ffcc00;
+}
+
+/* Cart Info */
+.cart-info {
+  background-color: #333; /* Dark background for cart info */
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Limit the width of the cart info */
+  width: 100%; /* Ensure it takes up full width up to the max-width */
+  margin: 20px auto; /* Center the cart info */
+}
+
+.cart-info p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.cart-info p:last-child {
+  font-weight: bold;
+}
+
+.cart-info a {
+  display: block;
+  margin-top: 15px; /* Add space between last paragraph and the link */
+}
+
+/* Empty Cart Message */
+.empty-product {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5em;
+  color: #ff0000;
+}
+
+.empty-product h1 {
+  margin-bottom: 20px;
+}
+
+/* Optional Styling for Buttons */
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Remove Product Button Styling */
+.remove-product-btn {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #ff4d4d; /* Red background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center; /* Align icon and text */
+  justify-content: center;
+}
+
+.remove-product-btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.remove-product-btn:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.remove-product-btn:active {
+  background-color: #e60000; /* Even darker red on click */
+  transform: scale(0.98); /* Button shrink effect on click */
+}
